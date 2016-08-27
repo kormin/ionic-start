@@ -1,3 +1,10 @@
+<!-- 
+Author: kormin
+Date Created: August 27, 2016
+Resources:
+http://ionicframework.com/docs/guide/
+ -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,6 +26,10 @@
       <ion-side-menu-content>
         <ion-header-bar class="bar-dark">
           <h1 class="title">Todo</h1>
+          <!-- New Task button-->
+          <button class="button button-icon" ng-click="newTask()">
+            <i class="icon ion-compose"></i>
+          </button>
         </ion-header-bar>
         <ion-content>
           <!-- our list and list items -->
@@ -38,7 +49,7 @@
       </ion-side-menu>
     </ion-side-menus>
 
-    
+
     <script id="new-task.html" type="text/ng-template">
       <div class="modal">
         <!-- Modal header bar -->
